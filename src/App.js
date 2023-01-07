@@ -6,6 +6,13 @@ import React, { useState, useEffect } from 'react';
 
 
 function App() {
+  const [refreshFlag, setRefreshFlag] = useState(0);
+  const refresh = function(noChanges=false){
+    if(!noChanges){
+      setRefreshFlag(refreshFlag +1 );
+    }
+    setSelectedBook(null);
+  }
   const [books, setBooks] = useState([]);
   const [selectedBook, setSelectedBook] = useState(null);
   useEffect(() => {
@@ -17,12 +24,13 @@ function App() {
             setBooks(bookArray);
         }
     )
-  }, []);
+  }, [refreshFlag]);
   
   const Conditional = function() {
     if(selectedBook != null) {
       return <BookForm book={selectedBook}
               setBook={setSelectedBook}
+              refresh={refresh}
               />
     }
       return <div/>

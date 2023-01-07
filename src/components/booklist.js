@@ -17,7 +17,10 @@ export default function BookList(props) {
                 }
             )}
         </ul>
-        <input type={'button'} value="New Book" />
+        <input type={'button'} 
+                value="New Book" 
+                onClick={()=> props.setSelectedBook(newBook)}
+        />
     </div>
     );
 }
