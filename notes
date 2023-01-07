@@ -1,0 +1,6 @@
+Create and access rest-server on localhost:4000
+
+npm start
+
+npm run start-server
+
