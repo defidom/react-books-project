@@ -10,13 +10,19 @@
       "id": 1,
       "isbn": "456",
       "title": "The Stranger on the Train",
-      "price": 11.00
+      "price": 11
     },
     {
       "id": 2,
-      "isbn": "789",
+      "isbn": "555",
       "title": "War and Peace",
       "price": 8.95
+    },
+    {
+      "isbn": "777",
+      "title": "f",
+      "price": 0,
+      "id": 3
     }
   ]
 }

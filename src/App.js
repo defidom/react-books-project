@@ -29,7 +29,7 @@ function App() {
   const Conditional = function() {
     if(selectedBook != null) {
       return <BookForm book={selectedBook}
-              setBook={setSelectedBook}
+              setSelectedBook={setSelectedBook}
               refresh={refresh}
               />
     }
@@ -41,7 +41,7 @@ function App() {
         <h3>React Book Project</h3>
           <BookList books={books} 
                     selectedBook={selectedBook} 
-                    setSelectedBook={selectedBook} />
+                    setSelectedBook={setSelectedBook} />        
           <Conditional />
     </div>
   );

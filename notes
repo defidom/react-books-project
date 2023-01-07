@@ -4,3 +4,14 @@ npm start
 
 npm run start-server
 
+Installed REST server
+Test proxy
+Create book list w sample data
+Update book list with data from REST service
+Highlight a selected book in book list
+Display selected book in book form
+Add bookform usage property
+Add input field edit capability
+Add Save function
+Add Auto-Refresh capability
+Add Delete Book capability 
